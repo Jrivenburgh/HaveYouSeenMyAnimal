@@ -5,6 +5,7 @@ import Detail from "./pages/Detail";
 import Login from "./pages/Login";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
+import Signup from "./pages/Signup";
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
           <Route exact path="/" component={Animals} />
           <Route exact path="/Animals" component={Animals} />
           <Route exact path="/Animals/:id" component={Detail} />
+          <Route exact path="/Login" component={Login} />
+          <Route exact path="/Signup" component={Signup} />
           <Route component={NoMatch} />
-          <Route exact path="/Animals/Login" component={Login} />
         </Switch>
       </div>
     </Router>

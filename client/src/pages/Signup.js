@@ -4,7 +4,7 @@ import { Col, Row, Container } from "../components/Grid";
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 
-class Login extends Component {
+class Signup extends Component {
   state = {
     Animal: {}
   };
@@ -26,7 +26,7 @@ class Login extends Component {
                 {this.state.Animal.Picture}
               </image>
               <h1>
-                {this.state.Animal.Breed} {this.state.Animal.Type} login {this.state.Animal.Zip} at {this.state.Animal.date}
+                {this.state.Animal.Breed} {this.state.Animal.Type} signup {this.state.Animal.Zip} at {this.state.Animal.date}
               </h1>
             </Jumbotron>
           </Col>
@@ -34,7 +34,7 @@ class Login extends Component {
         <Row>
           <Col size="md-10 md-offset-1">
             <article>
-              <h1>login</h1>
+              <h1>signup</h1>
               <p>
                 {this.state.Animal.Description}
               </p>
@@ -51,4 +51,4 @@ class Login extends Component {
   }
 }
 
-export default Login;
+export default Signup;
