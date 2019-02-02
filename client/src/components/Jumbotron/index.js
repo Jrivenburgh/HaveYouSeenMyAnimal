@@ -1,9 +1,9 @@
 import React from "react";
-
+import "./jt.css";
 function Jumbotron({ children }) {
   return (
     <div
-      style={{ height: 300, clear: "both", paddingTop: 120, textAlign: "center" }}
+      style={{ height: 'auto', clear: "both", textAlign: "center",   opacity: 1 }}
       className="jumbotron"
     >
       {children}
