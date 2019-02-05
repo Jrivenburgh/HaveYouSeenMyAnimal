@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
-
+import css from "./Signup.css"
 class Signup extends Component {
   state = {
     Animal: {}
@@ -18,35 +18,29 @@ class Signup extends Component {
 
   render() {
     return (
+      <div style={{
+        // background: "url(" + "https://static01.nyt.com/images/2018/02/25/realestate/25SUBURBS-slide-X8YZ/25SUBURBS-slide-X8YZ-superJumbo.jpg?quality=75&auto=webp&disable=upscale" + ")",
+        // backgroundColor: 'black',
+        //   minHeight: '100%',
+        //   minWidth: '1024px',
+        //   width: '100%',
+        //   // height: 'auto',
+        //   backgroundRepeat: 'no-repeat',
+        //   padding: '20px'
+      }}
+      >
       <Container fluid>
         <Row>
           <Col size="md-12">
             <Jumbotron>
-              <image>
-                {this.state.Animal.Picture}
-              </image>
-              <h1>
-                {this.state.Animal.Breed} {this.state.Animal.Type} signup {this.state.Animal.Zip} at {this.state.Animal.date}
-              </h1>
+              <a href="/"><h1>
+                signup
+              </h1></a>
             </Jumbotron>
           </Col>
         </Row>
-        <Row>
-          <Col size="md-10 md-offset-1">
-            <article>
-              <h1>signup</h1>
-              <p>
-                {this.state.Animal.Description}
-              </p>
-            </article>
-          </Col>
-        </Row>
-        <Row>
-          <Col size="md-2">
-            <Link to="/">← Back to Animals</Link>
-          </Col>
-        </Row>
       </Container>
+      </div>
     );
   }
 }

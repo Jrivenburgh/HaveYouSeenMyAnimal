@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
+import css from "./Login.css"
 
 class Login extends Component {
   state = {
@@ -18,35 +19,21 @@ class Login extends Component {
 
   render() {
     return (
+      <div style={{
+      }}
+      >
       <Container fluid>
         <Row>
           <Col size="md-12">
             <Jumbotron>
-              <image>
-                {this.state.Animal.Picture}
-              </image>
-              <h1>
-                {this.state.Animal.Breed} {this.state.Animal.Type} login {this.state.Animal.Zip} at {this.state.Animal.date}
-              </h1>
+            <a href="/"><h1>
+               login
+              </h1></a>
             </Jumbotron>
           </Col>
         </Row>
-        <Row>
-          <Col size="md-10 md-offset-1">
-            <article>
-              <h1>login</h1>
-              <p>
-                {this.state.Animal.Description}
-              </p>
-            </article>
-          </Col>
-        </Row>
-        <Row>
-          <Col size="md-2">
-            <Link to="/">← Back to Animals</Link>
-          </Col>
-        </Row>
       </Container>
+      </div>
     );
   }
 }

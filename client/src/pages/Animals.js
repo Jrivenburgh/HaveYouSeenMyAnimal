@@ -60,56 +60,27 @@ class Animals extends Component {
 
   render() {
     return (
+      <div style={{
+        background: "url(" + "http://parkhallindest.com/images/courtyard.JPG" + ")",
+        backgroundColor: 'black',
+        minHeight: '100%',
+        minWidth: '1024px',
+        width: '100%',
+        height: 'auto',
+        backgroundRepeat: 'no-repeat',
+        padding: '20px',
+      }}
+      >
       <Container fluid>
-        <Row>
-          <Col size="md-6">
-            <Jumbotron>
-              <h1>Have You Seen My Animal?</h1>
-            </Jumbotron>
-            <form>
-              <Input
-                value={this.state.Type}
-                onChange={this.handleInputChange}
-                name="Type"
-                placeholder="Type (required)"
-              />
-              <Input
-                value={this.state.Breed}
-                onChange={this.handleInputChange}
-                name="Breed"
-                placeholder="Breed (required)"
-              />
-              <TextArea
-                value={this.state.Description}
-                onChange={this.handleInputChange}
-                name="Description"
-                placeholder="Description (Optional)"
-              />
-              <Input
-                value={this.state.Zip}
-                onChange={this.handleInputChange}
-                name="Zip"
-                placeholder="Zip (required)"
-              />
-              <Input
-                value={this.state.Picture}
-                onChange={this.handleInputChange}
-                name="Picture"
-                placeholder="Picture (Optional)"
-              />
-              
-              <FormBtn
-                disabled={!(this.state.Breed && this.state.Type)}
-                onClick={this.handleFormSubmit}
-              >
-                Submit Animal
-              </FormBtn>
-            </form>
-          </Col>
-          <Col size="md-6 sm-12">
-            <Jumbotron>
-              <h1>Animals On My List</h1>
-            </Jumbotron>
+      <Col size="md-12">
+              <h1 style={{
+              background: 'rgb(17, 47, 69, 0.9)',
+              textAlign: 'center',
+              color: 'white',
+              padding: '30px',
+              margin: '100px 100px 10px 100px',
+              }}>
+              your pets</h1>
             {this.state.Animals.length ? (
               <List>
                 {this.state.Animals.map(Animal => (
@@ -127,11 +98,64 @@ class Animals extends Component {
                 ))}
               </List>
             ) : (
-              <h3>No Results to Display</h3>
+              <h3>no results to display</h3>
             )}
           </Col>
+        <Row>
+          <Col size="md-12">          
+              <h1 style={{
+              background: 'rgb(17, 47, 69, 0.9)',
+              textAlign: 'center',
+              color: 'white',
+              padding: '30px',
+              margin: '100px 100px 10px 100px',
+              }}>
+              add a pet
+              </h1>
+            <form>
+              <Input
+                value={this.state.Type}
+                onChange={this.handleInputChange}
+                name="Type"
+                placeholder="animal type (required)"
+              />
+              <Input
+                value={this.state.Breed}
+                onChange={this.handleInputChange}
+                name="Breed"
+                placeholder="breed (required)"
+              />
+              <TextArea
+                value={this.state.Description}
+                onChange={this.handleInputChange}
+                name="Description"
+                placeholder="description (optional)"
+              />
+              <Input
+                value={this.state.Zip}
+                onChange={this.handleInputChange}
+                name="Zip"
+                placeholder="zipcode (required)"
+              />
+              <Input
+                value={this.state.Picture}
+                onChange={this.handleInputChange}
+                name="Picture"
+                placeholder="picture (Optional)"
+              />
+              
+              <FormBtn
+                disabled={!(this.state.Breed && this.state.Type)}
+                onClick={this.handleFormSubmit}
+              >
+                submit animal
+              </FormBtn>
+            </form>
+          </Col>
+          
         </Row>
       </Container>
+      </div>
     );
   }
 }

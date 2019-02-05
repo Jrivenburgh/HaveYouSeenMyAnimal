@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Col, Row, Container } from "../components/Grid";
 // import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
-import "./HomePage.css";
 // import { CLIENT_RENEG_LIMIT } from "tls";
 import cards from "../cards.json";
 import Card from "../components/Card";
