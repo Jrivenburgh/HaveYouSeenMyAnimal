@@ -109,6 +109,10 @@ class Animals extends Component {
               }}>
               Add a pet to see here</h3>
             )}
+            
+            <button style={{
+              margin: '0px 100px 0px 100px',
+            }} className="btn btn-info"><a className="text-white center-block" href="https://fierce-shore-64952.herokuapp.com">Mark pet as lost</a></button>
           </Col>
         <Row>
           <Col size="md-12">          
