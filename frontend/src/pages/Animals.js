@@ -79,6 +79,7 @@ class Animals extends Component {
               color: 'white',
               padding: '30px',
               margin: '100px 100px 10px 100px',
+              textShadow: '2px 2px black',
               }}>
               Your Pets</h1>
             {this.state.Animals.length ? (
@@ -102,7 +103,7 @@ class Animals extends Component {
                 color:'white',
                 textAlign:'center',
                 backgroundColor:'rgb(52,58,64,0.8)',
-                margin: '0px 150px 0px 150px',
+                margin: '0px 300px 0px 300px',
               }}>
               Add a pet to see here</h3>
             )}
@@ -115,10 +116,13 @@ class Animals extends Component {
               color: 'white',
               padding: '30px',
               margin: '100px 100px 10px 100px',
+              textShadow: '2px 2px black',
               }}>
               Add a Pet
               </h1>
-            <form>
+            <form style={{
+              margin: '100px 100px 10px 100px',
+            }}>
               <Input
                 value={this.state.Type}
                 onChange={this.handleInputChange}

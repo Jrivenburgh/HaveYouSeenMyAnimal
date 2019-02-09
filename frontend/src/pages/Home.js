@@ -23,10 +23,11 @@ export default class Home extends Component {
                   <h3
                     style={{
                       background: 'rgb(52, 58, 64, 0.9)',
+                      borderRadius:'10px',
                       position: 'center',
                       color: 'white',
-                      padding: '40px',
-                      marginTop: '100px',
+                      padding: '60px',
+                      margin: '10px 150px 0px 150px',
                     }}
                   >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -37,8 +38,9 @@ export default class Home extends Component {
               <div
                 style={{
                   background: 'rgb(52, 58, 64, 0.9)',
+                  borderRadius:'10px',
                   color: 'white',
-                  margin: '20px',
+                  margin: '10px 200px 0px 200px',
                 }}
               >
               
@@ -46,6 +48,7 @@ export default class Home extends Component {
                       style={{
                         padding: '40px',
                         textAlign: 'center',
+                        textShadow: '2px 2px black',
                       }}
                     >
                       Lets find these pets!
