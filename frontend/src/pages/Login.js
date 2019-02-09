@@ -54,7 +54,7 @@ class Login extends Component {
     render() {
         const {errors} = this.state;
         return(
-        <div className="container" style={{ marginTop: '50px', width: '700px'}}>
+        <div className="container" style={{ marginTop: '50px', width: '700px', fontFamily:'Righteous, cursive',}}>
             <h2 style={{marginBottom: '40px'}}>Login</h2>
             <form onSubmit={ this.handleSubmit }>
                 <div className="form-group">
@@ -84,7 +84,7 @@ class Login extends Component {
                     {errors.password && (<div className="invalid-feedback">{errors.password}</div>)}
                 </div>
                 <div className="form-group">
-                    <button type="submit" className="btn btn-primary">
+                    <button type="submit" className="btn btn-info">
                         Login User
                     </button>
                 </div>

@@ -3,9 +3,10 @@ import DeleteBtn from "../components/DeleteBtn";
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 import { Link } from "react-router-dom";
-import { Col, Row, Container } from "../components/Grid";
+import { Col, Row} from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
+// import css from "./index.css"
 
 class Animals extends Component {
   state = {
@@ -58,27 +59,28 @@ class Animals extends Component {
 
   render() {
     return (
-      <div style={{
-        background: "url(" + "http://parkhallindest.com/images/courtyard.JPG" + ")",
-        backgroundColor: 'black',
-        minHeight: '100%',
-        minWidth: '1024px',
-        width: '100%',
-        height: 'auto',
-        backgroundRepeat: 'no-repeat',
-        padding: '20px',
-      }}
-      >
-      <Container fluid>
+      <body style={{
+        background: "url(http://inrix.com/wp-content/themes/inrix/assets/images/placeholders/placeholder-9.jpg)",
+          backgroundColor: 'black',
+          minHeight: '100%',
+          minWidth: '1024px',
+          width: '100%',
+          height: 'auto',
+          backgroundRepeat: 'no-repeat',
+          padding: '50px',
+          backgroundPosition: 'fixed',
+          fontFamily:'Righteous, cursive',
+      }}>
+  
       <Col size="md-12">
               <h1 style={{
-              background: 'rgb(17, 47, 69, 0.9)',
+              background: 'rgb(52, 58, 64, 0.9)',
               textAlign: 'center',
               color: 'white',
               padding: '30px',
               margin: '100px 100px 10px 100px',
               }}>
-              your pets</h1>
+              Your Pets</h1>
             {this.state.Animals.length ? (
               <List>
                 {this.state.Animals.map(Animal => (
@@ -96,19 +98,25 @@ class Animals extends Component {
                 ))}
               </List>
             ) : (
-              <h3>no results to display</h3>
+              <h3 style={{
+                color:'white',
+                textAlign:'center',
+                backgroundColor:'rgb(52,58,64,0.8)',
+                margin: '0px 150px 0px 150px',
+              }}>
+              Add a pet to see here</h3>
             )}
           </Col>
         <Row>
           <Col size="md-12">          
               <h1 style={{
-              background: 'rgb(17, 47, 69, 0.9)',
+              background: 'rgb(52, 58, 64, 0.9)',
               textAlign: 'center',
               color: 'white',
               padding: '30px',
               margin: '100px 100px 10px 100px',
               }}>
-              add a pet
+              Add a Pet
               </h1>
             <form>
               <Input
@@ -129,12 +137,12 @@ class Animals extends Component {
                 name="Description"
                 placeholder="description (optional)"
               />
-              <Input
+              {/* <Input
                 value={this.state.Zip}
                 onChange={this.handleInputChange}
                 name="Zip"
                 placeholder="zipcode (required)"
-              />
+              /> */}
               <Input
                 value={this.state.Picture}
                 onChange={this.handleInputChange}
@@ -142,7 +150,7 @@ class Animals extends Component {
                 placeholder="picture (Optional)"
               />
               
-              <FormBtn
+              <FormBtn 
                 disabled={!(this.state.Breed && this.state.Type)}
                 onClick={this.handleFormSubmit}
               >
@@ -152,8 +160,9 @@ class Animals extends Component {
           </Col>
           
         </Row>
-      </Container>
-      </div>
+    
+      </body>
+      
     );
   }
 }
