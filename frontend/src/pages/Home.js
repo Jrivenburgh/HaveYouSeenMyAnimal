@@ -16,7 +16,7 @@ export default class Home extends Component {
               backgroundRepeat: 'no-repeat',
               padding: '20px',
               position: 'fixed',
-              fontFamily:'Righteous, cursive',
+              fontFamily: 'Fredoka One, sans-serif',
             }}
           >
            

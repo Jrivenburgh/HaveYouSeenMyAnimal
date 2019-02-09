@@ -69,7 +69,7 @@ class Animals extends Component {
           backgroundRepeat: 'no-repeat',
           padding: '50px',
           backgroundPosition: 'fixed',
-          fontFamily:'Righteous, cursive',
+          fontFamily: 'Fredoka One, sans-serif',
       }}>
   
       <Col size="md-12">
@@ -80,6 +80,7 @@ class Animals extends Component {
               padding: '30px',
               margin: '100px 100px 10px 100px',
               textShadow: '2px 2px black',
+              borderRadius:'10px',
               }}>
               Your Pets</h1>
             {this.state.Animals.length ? (
@@ -104,6 +105,7 @@ class Animals extends Component {
                 textAlign:'center',
                 backgroundColor:'rgb(52,58,64,0.8)',
                 margin: '0px 300px 0px 300px',
+                borderRadius:'10px',
               }}>
               Add a pet to see here</h3>
             )}
@@ -117,6 +119,7 @@ class Animals extends Component {
               padding: '30px',
               margin: '100px 100px 10px 100px',
               textShadow: '2px 2px black',
+              borderRadius:'10px',
               }}>
               Add a Pet
               </h1>

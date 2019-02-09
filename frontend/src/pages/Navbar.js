@@ -19,7 +19,7 @@ class Navbar extends Component {
         const {isAuthenticated, user} = this.props.auth;
         const authLinks = (
             <ul style={{
-                fontFamily:'Righteous, cursive',
+                fontFamily: 'Fredoka One, sans-serif',
             }}
             className="navbar-nav ml-auto">
             <Link className="nav-link text-white" to="/Animals">Profile</Link>
@@ -36,7 +36,7 @@ class Navbar extends Component {
         )
       const guestLinks = (
         <ul style={{
-            fontFamily:'Righteous, cursive',
+            fontFamily: 'Fredoka One, sans-serif',
         }}
         className="navbar-nav ml-auto">
             <li className="nav-item">
@@ -58,7 +58,7 @@ class Navbar extends Component {
                     textShadow: '2px 2px white',
                     fontSize: '25px',
                     fontWeight:'bold',
-                    fontFamily:'Righteous, cursive',
+                    fontFamily:'Permanent Marker, cursive',
                 }}
                 className="navbar-brand text-info" to="/">EyeOut</Link>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
