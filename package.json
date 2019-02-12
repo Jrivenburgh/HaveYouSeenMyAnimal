@@ -8,12 +8,13 @@
     "npm": "6.x"
   },
   "scripts": {
+    "preinstall": "npm install ",
     "frontend-install": "cd frontend && npm install",
     "start": "node app.js",
     "server": "nodemon app.js",
-    "frontend": "npm start",
-    "dev": "concurrently \"npm run app\" \"npm run frontend/src/App\"",
-    "heroku-postbuild": "cd frontend && npm install"
+    "frontend": "cd frontend && npm start",
+    "dev": "concurrently \"npm run app\" \"npm run frontend\"",
+    "heroku-postbuild": "cd frontend && npm run build"
   },
   "keywords": [],
   "author": "",
