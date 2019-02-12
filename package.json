@@ -8,7 +8,7 @@
     "npm": "6.x"
   },
   "scripts": {
-    "frontend-install": "cd frontend && npm install",
+    "frontend-install": "cd frontend && npm install .",
     "start": "node app.js",
     "server": "nodemon app.js",
     "frontend": "cd frontend && npm start",
