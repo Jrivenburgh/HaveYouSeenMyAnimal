@@ -13,7 +13,7 @@
     "server": "nodemon app.js",
     "frontend": "npm start",
     "dev": "concurrently \"npm run app\" \"npm run frontend\"",
-    "heroku-postbuild": "cd frontend && npm run build"
+    "heroku-postbuild": "cd frontend && npm install"
   },
   "keywords": [],
   "author": "",
