@@ -12,6 +12,7 @@
     "bootstrap": "^4.1.2",
     "classnames": "^2.2.6",
     "concurrently": "^4.1.0",
+    "http-proxy-middleware": "^0.19.1",
     "jwt-decode": "^2.2.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
@@ -22,6 +23,7 @@
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
+    "morgan": "^1.9.1",
     "nodemon": "^1.18.9"
   },
   "scripts": {
